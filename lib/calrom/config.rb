@@ -47,7 +47,8 @@ module Calrom
             raise InputError.new '--calendar option provided multiple times, but at least one of the calendars is remote. Remote calendars cannot be layered.'
           end
 
-          CR::Remote::Calendar.new date_range.first.year, @sanctorale.last
+          raise InputError.new 'unsupported use of remote calendar'
+          # CR::Remote::Calendar.new date_range.first.year, @sanctorale.last
         else
           CR::PerpetualCalendar.new(sanctorale: build_sanctorale, temporale_options: temporale_options)
         end

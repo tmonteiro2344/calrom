@@ -1,5 +1,4 @@
 require 'calendarium-romanum'
-require 'calendarium-romanum/remote'
 require 'colorized_string'
 
 # make useful calendarium-romanum constants available as top-level constants

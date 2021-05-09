@@ -25,9 +25,9 @@ module Calrom
         exit 1
       end
 
-      unless config.verbose
-        HTTPI.log = false
-      end
+    #  unless config.verbose
+    #    HTTPI.log = false
+    #  end
 
       begin
         config.build_formatter.call calendar, config.date_range
